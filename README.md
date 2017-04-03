@@ -1,14 +1,13 @@
 # lt-jest-snapshots
 
-* Hva er Jest?
-* Alternativer - Mocha, Jasmine, AVA, QUnit, Tape, Lab
-* Overordnet Jest
-    * Test-runner
-    * Assertion-lib
-    * Test-isolasjon
-    * DOM-støtte
-    * Mocks, stubs og spies
-    * Snapshots
+* Egenskaper for verktøy til å teste JavaScript
+   * Test-runner
+   * Assertions
+   * DOM-støtte
+   * Mocks, stubs og spies
+   * Test-isolasjon
+   * Snapshots (ny!)
+* Alternativer - Jest, Mocha, Jasmine, AVA, Karma, QUnit, Tape, Lab, Testem, ...
 * Snapshots
     * React
     * Serialiserte ting
