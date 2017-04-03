@@ -5,6 +5,7 @@
    * Assertions
    * DOM-støtte
    * Mocks, stubs og spies
+   * Asynk-støtte
    * Test-isolasjon
    * Snapshots (ny!)
 * Alternativer - Jest, Mocha, Jasmine, AVA, Karma, QUnit, Tape, Lab, Testem, ...
