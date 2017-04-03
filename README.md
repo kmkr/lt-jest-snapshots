@@ -9,6 +9,7 @@
    * Mulighet for debugging
    * Rask feedback
    * Test-isolasjon
+   * Vise grad av testdekning
    * Snapshots (ny!)
 * Alternativer - Jest, Mocha, Jasmine, AVA, Karma, QUnit, Tape, Lab, Testem, ...
 * Snapshots
