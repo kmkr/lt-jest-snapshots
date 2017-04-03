@@ -6,6 +6,7 @@
    * DOM-støtte
    * Mocks, stubs og spies
    * Asynk-støtte
+   * Mulighet for debugging
    * Test-isolasjon
    * Snapshots (ny!)
 * Alternativer - Jest, Mocha, Jasmine, AVA, Karma, QUnit, Tape, Lab, Testem, ...
