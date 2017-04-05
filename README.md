@@ -16,3 +16,6 @@
 * Snapshots
     * React
     * Serialiserte ting
+* Erfaringer
+    * Hastighetsforbedring
+    * Enklere å skrive tester
