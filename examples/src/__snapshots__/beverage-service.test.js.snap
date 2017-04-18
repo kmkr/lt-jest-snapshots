@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HotBeverage should render correctly 1`] = `
+Object {
+  "isHot": true,
+  "sizeOfCup": "large-cup",
+  "type": "coffee",
+}
+`;
+
+exports[`HotBeverage should throw on too much content 1`] = `"Too much content"`;

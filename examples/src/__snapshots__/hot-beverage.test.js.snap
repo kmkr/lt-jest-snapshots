@@ -14,6 +14,20 @@ exports[`HotBeverage should render correctly 1`] = `
 </div>
 `;
 
+exports[`HotBeverage should render correctly when pouring in tea 1`] = `
+<div>
+  <p>
+    I am a HotBeverage and contains 
+    tea
+  </p>
+  <button
+    onClick={[Function]}
+  >
+    Pour in tea
+  </button>
+</div>
+`;
+
 exports[`HotBeverage should render correctly with tea 1`] = `
 <div>
   <p>
