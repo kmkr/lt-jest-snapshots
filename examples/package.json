@@ -17,6 +17,7 @@
     "webpack": "^2.3.3"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "test:debug": "node --debug-brk --inspect node_modules/.bin/jest --runInBand --watch --env jest-environment-node-debug"
   }
 }

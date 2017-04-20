@@ -1,10 +1,11 @@
 import React, { PureComponent } from 'react';
+import barista from './barista';
 
 export default class HotBeverage extends PureComponent {
     constructor() {
         super();
         this.state = {
-            contains: 'coffee'
+            beverage: null
         };
 
         this.pourTea = this.pourTea.bind(this);
@@ -12,16 +13,23 @@ export default class HotBeverage extends PureComponent {
 
     pourTea() {
         this.setState({
-            contains: 'tea'
+            beverage: barista({
+                type: 'tea',
+                centiliters: 100
+            })
         });
     }
 
     render() {
         return (
             <div>
-                <p>I am a HotBeverage and contains {this.state.contains}</p>
+                <p>
+                    The beverage contains {this.state.beverage ? this.state.beverage.type : 'nothing'}
+                </p>
 
-                <button onClick={this.pourTea}>Pour in tea</button>
+                <button onClick={this.pourTea}>
+                    Pour in some tea
+                </button>
             </div>
         );
     }

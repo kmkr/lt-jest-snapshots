@@ -1,4 +1,4 @@
-function getSizeOfCup (centiliters) {
+function getCupType (centiliters) {
     if (centiliters <= 1) {
         return 'tiny-cup';
     }
@@ -17,7 +17,6 @@ function getSizeOfCup (centiliters) {
 export default function makeBeverage ({ type, centiliters }) {
     return {
         type,
-        isHot: type === 'coffee',
-        sizeOfCup: getSizeOfCup(centiliters),
+        cup: getCupType(centiliters),
     }
 }

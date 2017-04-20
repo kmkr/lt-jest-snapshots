@@ -6,6 +6,7 @@
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="shower/themes/ribbon/styles/screen-16x10.css">
+	<script src="scripts/microlight.js"></script>
 </head>
 <body class="shower list">
 	<section class="slide">
@@ -20,6 +21,12 @@
 			#no-to-eng {
 				text-align: center;
 			}
+			.microlight {
+				font-family : monospace;
+				white-space : pre;
+				background-color : #C4E4E8;
+				color            : #052C36;    
+			}
 		</style>
 	</section>
 	<section class="slide">
@@ -32,7 +39,7 @@
 	<section class="slide">
 		<figure>
 			<blockquote>
-				<p>Det er tidkrevende å vedlikeholde tester</p>
+				<p>Det er tidkrevende å vedlikeholde UI-tester</p>
 			</blockquote>
 		</figure>
 	</section>
@@ -43,13 +50,13 @@
 		<ul>
 			<li>Mocha</li>
 			<li>Jasmine</li>
-			<li>AVA</li>
 			<li>Karma</li>
 			<li>QUnit</li>
 			<li>Tape</li>
 			<li>Lab</li>
 			<li>Testem</li>
-			<li class="next"><strong>Jest</strong></li>
+			<li class="next"><strong>AVA</strong> 🚀</li>
+			<li class="next"><strong>Jest</strong> 🃏</li>
 		</ul>
 	</section>
 	<section class="slide">
@@ -60,11 +67,11 @@
 	<section class="slide">
 		<p>... Jest er et assetion-bibliotek</p>
 
-		<pre>
-			expect(myWazService()).toEqual({
-				waz: 14
-			});
-		</pre>
+		<div class="microlight">
+expect(myWazService()).toEqual({
+    waz: 14
+});
+		</div>
 	</section>
 	<section class="slide">
 		<img style="max-width: 75%; margin-top: -40px" src="imgs/debugging.png"/>
@@ -77,16 +84,13 @@
 		</ul>
 	</section>
 	<section class="slide">
-		<!-- 
-		node --debug-brk --inspect node_modules/.bin/jest --runInBand --watch --env jest-environment-node-debug
-		-->
 		<img style="max-width: 75%" src="imgs/demo.jpg"/>
 	</section>
 	<section class="slide">
 		<h1>Svakheter</h1>
 		<ul>
-			<li>Tester beskriver hva som skjer mindre enn før</li>
-			<li>Små kodeendringer kan føre til store snapshotendringer</li>
+			<li>Mindre beskrivende tester</li>
+			<li>Små kodeendringer → store snapshotendringer</li>
 			<li>Ingen Enzyme-integrasjon (enda)</li>
 		</ul>
 	</section>

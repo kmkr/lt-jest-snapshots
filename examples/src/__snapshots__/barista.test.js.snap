@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`the barista should make a coffee correctly 1`] = `
+Object {
+  "cup": "large-cup",
+  "type": "coffee",
+}
+`;
+
+exports[`the barista should throw on too much content 1`] = `"Too much content"`;
