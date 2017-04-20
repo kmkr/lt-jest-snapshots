@@ -6,5 +6,3 @@ Object {
   "type": "coffee",
 }
 `;
-
-exports[`the barista should throw on too much content 1`] = `"Too much content"`;

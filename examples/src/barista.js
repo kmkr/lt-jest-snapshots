@@ -7,11 +7,7 @@ function getCupType (centiliters) {
         return 'medium-cup'
     }
 
-    if (centiliters <= 100) {
-        return 'large-cup';
-    }
-
-    throw new Error('Too much content');
+    return 'large-cup';
 }
 
 export default function makeBeverage ({ type, centiliters }) {

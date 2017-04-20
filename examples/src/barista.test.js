@@ -10,12 +10,4 @@ describe('the barista', () => {
         expect(coffee).toMatchSnapshot();        
     });
 
-    it('should throw on too much content', () => {
-        expect(() => {
-            barista({
-                centiliters: 150
-            });
-        }).toThrowErrorMatchingSnapshot();
-    });
-
 });

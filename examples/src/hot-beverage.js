@@ -15,7 +15,7 @@ export default class HotBeverage extends PureComponent {
         this.setState({
             beverage: barista({
                 type: 'tea',
-                centiliters: 100
+                centiliters: 90
             })
         });
     }
