@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Shower Presentation Engine</title>
+	<title>Snapshot testing with React</title>
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,7 +10,8 @@
 </head>
 <body class="shower list">
 	<section class="slide">
-		<h2>Snapshot testing med React</h2>
+		<h2>Snapshot testing with React</h2>
+
 		<p>kris-mikael.krister@miles.no</p>
 	</section>
 	<section class="slide" id="no-to-eng">
@@ -32,14 +33,14 @@
 	<section class="slide">
 		<figure>
 			<blockquote>
-				<p>Det er kjedelig å teste React-komponenter</p>
+				<p>Testing React components is boring and cumbersome</p>
 			</blockquote>
 		</figure>
 	</section>
 	<section class="slide">
 		<figure>
 			<blockquote>
-				<p>Det er tidkrevende å vedlikeholde UI-tester</p>
+				<p>Maintaining UI tests is too demanding</p>
 			</blockquote>
 		</figure>
 	</section>
@@ -60,12 +61,12 @@
 		</ul>
 	</section>
 	<section class="slide">
-		<p>Jest er en test runner</p>
+		<p>Jest is a test runner</p>
 
 		<img src="imgs/test-runner.png"/>
 	</section>
 	<section class="slide">
-		<p>... Jest er et assetion-bibliotek</p>
+		<p>... an assertion library</p>
 
 		<div class="microlight">
 expect(myWazService()).toEqual({
@@ -78,20 +79,20 @@ expect(myWazService()).toEqual({
 	</section>
 	<section class="slide">
 		<ul>
-			<li>... Jest har DOM-støtte</li>
-			<li class="next">... mocks, stubs og spies</li>
-			<li class="next">... asynk-støtte</li>
+			<li>... supports DOM</li>
+			<li class="next">... asynchronous tests</li>
+			<li class="next">... has powerful mocks, stubs and spies</li>
 		</ul>
 	</section>
 	<section class="slide">
 		<img style="max-width: 75%" src="imgs/demo.jpg"/>
 	</section>
 	<section class="slide">
-		<h1>Svakheter</h1>
+		<h1>Limitations</h1>
 		<ul>
-			<li>Mindre beskrivende tester</li>
-			<li>Små kodeendringer → store snapshotendringer</li>
-			<li>Ingen Enzyme-integrasjon (enda)</li>
+			<li>Less describing tests</li>
+			<li>Small code changes → large changes to snapshots</li>
+			<li>No Enzyme integration (yet)</li>
 		</ul>
 	</section>
 	<div class="progress"></div>
