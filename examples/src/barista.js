@@ -3,7 +3,7 @@ function getCupType (centiliters) {
         return 'tiny-cup';
     }
 
-    if (centiliters <= 10) {
+    if (centiliters <= 50) {
         return 'medium-cup'
     }
 

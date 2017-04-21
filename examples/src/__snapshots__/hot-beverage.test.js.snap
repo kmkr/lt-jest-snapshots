@@ -3,8 +3,7 @@
 exports[`HotBeverage should render correctly 1`] = `
 <div>
   <p>
-    The beverage contains 
-    nothing
+    The beverage is empty.
   </p>
   <button
     onClick={[Function]}
@@ -15,15 +14,11 @@ exports[`HotBeverage should render correctly 1`] = `
 `;
 
 exports[`HotBeverage should render correctly when pouring in tea 1`] = `
-<div>
-  <p>
-    The beverage contains 
-    tea
-  </p>
-  <button
-    onClick={[Function]}
-  >
-    Pour in some tea
-  </button>
-</div>
+<p>
+  The beverage is a 
+  large-cup
+   of 
+  tea
+  .
+</p>
 `;

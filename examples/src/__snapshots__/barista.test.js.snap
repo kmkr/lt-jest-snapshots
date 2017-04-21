@@ -2,7 +2,7 @@
 
 exports[`the barista should make a coffee correctly 1`] = `
 Object {
-  "cup": "large-cup",
+  "cup": "medium-cup",
   "type": "coffee",
 }
 `;

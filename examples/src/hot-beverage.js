@@ -21,10 +21,18 @@ export default class HotBeverage extends PureComponent {
     }
 
     render() {
+        const { beverage } = this.state;
+        if (beverage && beverage.type) {
+            return (
+                <p>The beverage is a {beverage.cup} of {beverage.type}.</p>
+            );
+        }
+
+
         return (
             <div>
                 <p>
-                    The beverage contains {this.state.beverage ? this.state.beverage.type : 'nothing'}
+                    The beverage is empty.
                 </p>
 
                 <button onClick={this.pourTea}>
