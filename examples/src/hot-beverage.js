@@ -28,7 +28,6 @@ export default class HotBeverage extends PureComponent {
             );
         }
 
-
         return (
             <div>
                 <p>
