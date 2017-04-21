@@ -30,9 +30,7 @@ export default class HotBeverage extends PureComponent {
 
         return (
             <div>
-                <p>
-                    The beverage is empty.
-                </p>
+                <p>The beverage is empty.</p>
 
                 <button onClick={this.pourTea}>
                     Pour in some tea
