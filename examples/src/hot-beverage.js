@@ -2,39 +2,24 @@ import React, { PureComponent } from 'react';
 import barista from './barista';
 
 export default class HotBeverage extends PureComponent {
-    constructor() {
-        super();
-        this.state = {
-            beverage: null
-        };
 
-        this.pourTea = this.pourTea.bind(this);
-    }
-
-    pourTea() {
-        this.setState({
-            beverage: barista({
-                type: 'tea',
-                centiliters: 90
-            })
+    getBeverage() {
+        const { type } = this.props;
+        return barista({
+            type,
+            centiliters: 90
         });
     }
 
     render() {
-        const { beverage } = this.state;
-        if (beverage && beverage.type) {
-            return (
-                <p>The beverage is a {beverage.cup} of {beverage.type}.</p>
-            );
-        }
+        const beverage = this.getBeverage();
 
         return (
             <div>
-                <p>The beverage is empty.</p>
-
-                <button onClick={this.pourTea}>
-                    Pour in some tea
-                </button>
+                <h1>Hot beverage</h1>
+                <p>
+                    The beverage is a {beverage.cup} of {beverage.type}.
+                </p>
             </div>
         );
     }
