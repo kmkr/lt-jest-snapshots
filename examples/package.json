@@ -16,7 +16,7 @@
     "react-test-renderer": "^15.4.2"
   },
   "scripts": {
-    "test": "jest",
+    "test": "jest --watch",
     "test:debug": "node --debug-brk --inspect node_modules/.bin/jest --runInBand --watch --env jest-environment-node-debug"
   }
 }
